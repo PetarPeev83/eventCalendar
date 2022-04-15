@@ -5,17 +5,12 @@ let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('e
 const calendar = document.getElementById('calendar');
 const newEventModal = document.getElementById('newEventModal');
 const deleteEventModal = document.getElementById('deleteEventModal');
-// const backDrop = document.getElementById('modalBackDrop');
-// const eventTitleInput = document.getElementById('eventTitleInput');
-// const form = document.getElementById('form');
 const time = document.getElementById('time');
 const names = document.getElementById('names');
 const phone = document.getElementById('phone');
 const kaparo = document.getElementById('kaparo');
 const age = document.getElementById('age');
 const other = document.getElementById('other');
-// const container = document.getElementById('container');
-
 
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -242,7 +237,6 @@ function initButtons() {
 
     document.getElementById('saveButton').addEventListener('click', saveEvent);
     document.getElementById('cancelButton').addEventListener('click', closeModal);
-    // document.getElementById('deleteButton').addEventListener('click', deleteEvent);
     document.getElementById('closeButton').addEventListener('click', closeModal);
 }
 initButtons();
